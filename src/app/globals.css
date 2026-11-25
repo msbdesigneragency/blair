@@ -195,3 +195,29 @@ body{font-size:16px;line-height:1.5}
 }
 @media(prefers-reduced-motion:reduce){.product-image img{transition:none}}
 
+/* Concept result panel: mirror the reference hierarchy without unsupported performance data. */
+.results{grid-template-columns:minmax(0,40%) minmax(0,1fr);gap:clamp(28px,5vw,72px)}
+.comparison{aspect-ratio:2/1}
+.results-copy h2{max-width:600px;margin-bottom:clamp(18px,2.3vw,28px)}
+.concept-benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:0 0 14px}
+.concept-benefits>div{display:grid;align-content:start;gap:4px;padding:0 clamp(8px,1.5vw,20px);border-right:1px solid #7eabc680}
+.concept-benefits>div:first-child{padding-left:0}
+.concept-benefits>div:last-child{padding-right:0;border:0}
+.concept-benefits b{font:600 clamp(13px,1.35vw,18px)/1.2 var(--serif);text-align:center}
+.concept-benefits span{font-size:12px;line-height:1.35;text-align:center;color:#29485c}
+.concept-note{font-size:12px}
+@media(max-width:1000px){
+  .results{grid-template-columns:38% minmax(0,1fr);gap:24px}
+  .concept-benefits>div{padding-inline:8px}
+  .concept-benefits b{font-size:14px}
+  .concept-benefits span{font-size:11px}
+}
+@media(max-width:760px){
+  .results{grid-template-columns:minmax(0,1fr);gap:15px}
+  .comparison{aspect-ratio:1.7/1}
+  .concept-benefits{gap:0;margin-bottom:12px}
+  .concept-benefits>div{padding-inline:6px}
+  .concept-benefits b{font-size:13px}
+  .concept-benefits span{font-size:10px}
+}
+
