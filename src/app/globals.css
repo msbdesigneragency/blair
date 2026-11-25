@@ -167,7 +167,7 @@ body{font-size:16px;line-height:1.5}
 }
 @media(min-width:701px) and (max-width:1000px){
   .hero{height:clamp(360px,45vw,430px)}
-  .hero-bg{background-size:100% auto;background-position:center bottom}
+  .hero-bg{background-size:100% auto;background-position:center bottom;background-repeat:no-repeat}
   .hero-copy{max-width:49%;padding-top:50px}
   .hero h1{font-size:clamp(34px,4.2vw,42px)}
   .hero-text{font-size:14px;line-height:1.45}
