@@ -6,7 +6,7 @@ import { ArrowLeft, ArrowRight, Check, ChevronDown, FlaskConical, Leaf, Menu, Pl
 import { products, type Product } from '@/lib/products';
 
 const ingredients = [
-  ['Provitamine B5', 'Hydratation et force', '/images/ingredient-b5.png'], ['Romarin', 'Stimule la pousse', '/images/ingredient-rosemary.png'], ['Aloe Vera', 'Apaise et régénère', '/images/ingredient-aloe.png'], ['Lavande', 'Équilibre le cuir chevelu', '/images/ingredient-lavender.png'], ['Huile végétale', 'Nourrit et protège', '/images/ingredient-oil.png'],
+  ['Provitamine B5', 'Hydratation et force', '/images/ingredient-b5.png'], ['Romarin', 'Stimule la pousse', '/images/ingredient-rosemary.png'], ['Aloe Vera', 'Apaise et régénère', '/images/ingredient-aloe.png'], ['Lavande', 'Équilibre le cuir chevelu', '/images/ingredient-lavender.png'], ['Huile végétale', 'Nourrit et protège', '/images/ingredient-oil-centered.png'],
 ];
 
 export default function Home() {
