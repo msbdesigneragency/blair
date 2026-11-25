@@ -1,4 +1,4 @@
 import type { NextConfig } from 'next';
 
-const nextConfig: NextConfig = { images: { unoptimized: true } };
+const nextConfig: NextConfig = { images: { unoptimized: true }, experimental: { cpus: 1 } };
 export default nextConfig;
