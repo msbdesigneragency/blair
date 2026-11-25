@@ -108,7 +108,7 @@ body{font-size:16px;line-height:1.5}
   .nav{height:58px;grid-template-columns:1fr auto auto;padding-inline:17px}
   .nav-links button{font-size:14px}
   .hero{height:465px}
-  .hero-bg{inset:auto 0 0;height:265px;background-size:100% auto;background-position:center bottom;background-repeat:no-repeat;opacity:1}
+  .hero-bg{inset:auto 0 0;height:265px;background-size:auto 265px;background-position:68% bottom;background-repeat:no-repeat;opacity:1}
   .hero:after{background:linear-gradient(180deg,#317397 0%,#317397 38%,#16445cad 67%,#12364b25 100%)}
   .hero-copy{padding:31px 6% 0;max-width:520px}
   .hero h1{font-size:clamp(35px,8.6vw,46px);margin:8px 0 10px}
@@ -124,12 +124,12 @@ body{font-size:16px;line-height:1.5}
   .section-intro h2{font-size:30px;margin-bottom:5px}
   .section-intro>p:not(.eyebrow){font-size:14px;line-height:1.45;max-width:260px;margin:0}
   .section-intro .button{grid-column:2;grid-row:2/4;font-size:11px;padding:0 10px;min-height:38px}
-  .product-row{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 0 7px;gap:12px}
-  .product-card{flex:0 0 72%;scroll-snap-align:start;padding-bottom:10px}
+  .product-row{grid-auto-columns:minmax(0,72%);grid-auto-flow:column;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 0 7px;gap:12px}
+  .product-card{scroll-snap-align:start;padding-bottom:10px}
   .product-image{height:auto;aspect-ratio:1/1}
   .product-card h3{font-size:14px;line-height:1.35;min-height:2.7em;margin:10px 10px 7px}
   .product-bottom{font-size:14px;margin-inline:10px}
-  .expertise-banner{height:auto;min-height:355px;display:flex;align-items:flex-end;padding:190px 18px 18px;gap:4px;background-size:100% 100%,auto 210px;background-repeat:no-repeat;background-position:center center,left top;background-color:#d7eafa;background-image:linear-gradient(180deg,rgba(215,234,250,0) 0%,rgba(215,234,250,.2) 38%,#d7eafa 60%,#d7eafa 100%),url('/images/wet-hair-banner.png')}
+  .expertise-banner{height:auto;min-height:355px;display:flex;align-items:flex-end;padding:190px 18px 18px;gap:4px;background-size:auto 210px;background-repeat:no-repeat;background-position:left top;background-color:#d7eafa;background-image:linear-gradient(180deg,transparent 0%,transparent 38%,rgba(222,239,249,.97) 59%,#c9e1f1 100%),url('/images/wet-hair-banner.png')}
   .expertise-copy{width:100%;max-width:none;padding:0}
   .expertise-copy h2{font-size:24px;line-height:1.08}
   .expertise-copy>p:not(.eyebrow){font-size:13px;max-width:360px}
@@ -165,7 +165,7 @@ body{font-size:16px;line-height:1.5}
   .hero{height:480px}
   .hero-buttons{gap:7px}
   .hero-buttons .button{font-size:11px;padding-inline:11px}
-  .product-card{flex-basis:78%}
+  .product-row{grid-auto-columns:minmax(0,78%)}
   .collection-tile{background-position:54% center}
   .footer{grid-template-columns:1fr}
   .footer-brand,.footer-links,.footer-concept{grid-column:1}
