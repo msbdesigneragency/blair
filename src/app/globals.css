@@ -220,4 +220,19 @@ body{font-size:16px;line-height:1.5}
   .concept-benefits b{font-size:13px}
   .concept-benefits span{font-size:10px}
 }
+@media(min-width:761px){
+  .results{min-height:0;padding-block:22px;grid-template-columns:minmax(0,42%) minmax(0,1fr);gap:clamp(28px,4.5vw,64px)}
+  .comparison{aspect-ratio:2/1}
+  .results-copy .eyebrow{margin-bottom:9px}
+  .results-copy h2{font-size:clamp(26px,2.25vw,32px);line-height:1.04;margin-bottom:18px;max-width:580px}
+  .concept-benefits{margin-bottom:11px}
+  .concept-benefits b{font-size:clamp(18px,1.8vw,24px)}
+  .concept-benefits span{font-size:12px}
+  .concept-note{font-size:11px;line-height:1.4}
+}
+@media(min-width:761px) and (max-width:1000px){
+  .results{grid-template-columns:minmax(0,39%) minmax(0,1fr);gap:22px}
+  .concept-benefits b{font-size:16px}
+  .concept-benefits span{font-size:10px}
+}
 
