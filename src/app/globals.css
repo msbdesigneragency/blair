@@ -84,6 +84,11 @@ body{font-size:16px;line-height:1.5}
 .footer-links button{font-size:13px;text-align:left;justify-self:start;padding:2px 0}
 .footer small{font-size:11px;border-top:1px solid #bad1e0;padding-top:15px;margin-top:10px}
 .concept-note{}
+.comparison-after{width:100%;clip-path:none;z-index:0}
+.comparison-before{z-index:1;clip-path:inset(0 calc(100% - var(--split)) 0 0)}
+.comparison-divider{z-index:2}
+.comparison-label{z-index:3}
+.comparison input{z-index:4}
 @media(max-width:1000px){
   :root{--page-width:calc(100% - 7vw)}
   .footer{grid-template-columns:repeat(2,minmax(0,1fr));padding:28px 5%;gap:22px}
