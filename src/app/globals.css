@@ -235,4 +235,5 @@ body{font-size:16px;line-height:1.5}
   .concept-benefits b{font-size:16px}
   .concept-benefits span{font-size:10px}
 }
+.results:after{display:none}
 
